@@ -1,35 +1,53 @@
 .input-form {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
 }
 
-.input-label {
+.input-password {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.input-password__label {
+  font-size: 18px;
   font-weight: bold;
 }
 
-.input-box {
+.input-password__box {
   display: flex;
   align-items: center;
   gap: 6px;
+  margin-top: 4px;
   padding: 12px;
   border: 2px solid #a69ff9;
   border-radius: 4px;
 }
 
-.input-box > svg {
+.input-password__box > svg {
   margin: 0 3px;
 }
 
-.input-content {
+.input-password__content {
   flex-grow: 1;
   padding: 5px 10px;
   border: none;
   border-left: 2px solid #6a5ef4;
   outline: none;
+  font-size: 13px;
+}
+
+.input-password__helpler {
   font-size: 14px;
 }
 
-.input-helpler {
-  font-size: 14px;
+.input-button {
+  text-align: center;
+  padding: 14px 16px;
+  border-radius: 4px;
+  color: white;
+  background-color: #6a5ef4;
+  font-size: 16px;
+  font-weight: bold;
 }
