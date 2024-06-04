@@ -1,0 +1,35 @@
+.input-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input-label {
+  font-weight: bold;
+}
+
+.input-box {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 12px;
+  border: 2px solid #a69ff9;
+  border-radius: 4px;
+}
+
+.input-box > svg {
+  margin: 0 3px;
+}
+
+.input-content {
+  flex-grow: 1;
+  padding: 5px 10px;
+  border: none;
+  border-left: 2px solid #6a5ef4;
+  outline: none;
+  font-size: 14px;
+}
+
+.input-helpler {
+  font-size: 14px;
+}

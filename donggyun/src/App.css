@@ -1,0 +1,9 @@
+.container {
+  width: 375px;
+  min-height: 100vh;
+  padding: 20px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  border: 1px solid lightgrey;
+  box-sizing: border-box;
+}
