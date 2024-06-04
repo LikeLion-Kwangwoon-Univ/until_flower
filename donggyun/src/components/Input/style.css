@@ -58,8 +58,3 @@
   background-color: lightgrey;
   color: grey;
 }
-
-.input-button:disabled ~ .input-password {
-  border: 2px solid red;
-  color: grey;
-}
