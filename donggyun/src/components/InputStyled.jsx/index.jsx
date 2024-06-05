@@ -2,24 +2,27 @@ import { MdOutlineLock } from 'react-icons/md';
 import { FiEyeOff } from 'react-icons/fi';
 import './style.css';
 import * as S from './styled';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 const InputStyled = () => {
   const [password, setPassword] = useState('');
-  const [isDisabled, setIsDisabled] = useState(true);
   const [borderColor, setBorderColor] = useState('#a69ff9');
+  const [isError, setIsError] = useState(false);
 
   const handleChange = (e) => setPassword(e.target.value);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(password);
-  };
 
-  useEffect(() => {
-    if (password.length >= 8) setIsDisabled(false);
-    else setIsDisabled(true);
-  }, [password]);
+    if (password.length >= 8) {
+      setBorderColor('#a69ff9');
+      setIsError(false);
+    } else {
+      setIsError(true);
+      setBorderColor('red');
+      console.log(password);
+    }
+  };
 
   return (
     <S.Container onSubmit={handleSubmit}>
@@ -38,10 +41,10 @@ const InputStyled = () => {
           <FiEyeOff size={18} color="grey" />
         </S.PasswordBox>
 
-        <S.Helper>{isDisabled && '8글자 이상 입력해주세요.'}</S.Helper>
+        <S.Helper>{isError && '8글자 이상 입력해주세요.'}</S.Helper>
       </S.PasswordSection>
 
-      <S.LoginBtn disabled={isDisabled}>로그인</S.LoginBtn>
+      <S.LoginBtn>로그인</S.LoginBtn>
     </S.Container>
   );
 };
