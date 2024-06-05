@@ -7,6 +7,7 @@ import { useEffect, useState } from 'react';
 const InputStyled = () => {
   const [password, setPassword] = useState('');
   const [isDisabled, setIsDisabled] = useState(true);
+  const [borderColor, setBorderColor] = useState('#a69ff9');
 
   const handleChange = (e) => setPassword(e.target.value);
 
@@ -25,7 +26,7 @@ const InputStyled = () => {
       <S.PasswordSection>
         <S.Label htmlFor="password">Password</S.Label>
 
-        <S.PasswordBox>
+        <S.PasswordBox $borderColor={borderColor}>
           <MdOutlineLock size={18} color="grey" />
           <S.Input
             type="password"

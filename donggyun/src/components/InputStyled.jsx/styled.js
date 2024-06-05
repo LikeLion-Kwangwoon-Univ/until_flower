@@ -23,7 +23,7 @@ export const PasswordBox = styled.div`
   gap: 6px;
   margin-top: 4px;
   padding: 12px;
-  border: 2px solid #a69ff9;
+  border: 2px solid ${(props) => props.$borderColor};
   border-radius: 4px;
 
   & > svg {
