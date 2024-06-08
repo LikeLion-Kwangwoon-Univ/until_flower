@@ -1,12 +1,14 @@
 import './App.css';
-import Input from './components/Input';
-import InputStyled from './components/InputStyled.jsx';
+import Product from './components/Product';
+// import Input from './components/Input';
+// import InputStyled from './components/InputStyled.jsx';
 
 function App() {
   return (
     <div className="container">
-      <Input />
-      <InputStyled />
+      {/* <Input /> */}
+      {/* <InputStyled /> */}
+      <Product />
     </div>
   );
 }
