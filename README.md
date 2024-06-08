@@ -57,5 +57,6 @@
 | **회차** | **주제**      | **주요 기술**                                 | 노션 주소                                                          |
 | -------- | ------------- | --------------------------------------------- | ------------------------------------------------------------------ |
 | 1회차    | 입력창 다루기 | useState, useEffect, input, flex, react-icons | [바로가기](https://www.notion.so/575980b5f8b44dd4bb620facab97bee3) |
+| 2회차    | Props | styled-component, S-dot naming, props | [바로가기](https://www.notion.so/2-Props-c8b50b99ef9c4fde90f574961d561b1c) |
 
 <br/><br/>
