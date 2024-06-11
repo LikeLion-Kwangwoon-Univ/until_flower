@@ -1,5 +1,6 @@
 import './App.css';
-import Product from './components/Product';
+import Balance from './components/Balance';
+// import Product from './components/Product';
 // import Input from './components/Input';
 // import InputStyled from './components/InputStyled.jsx';
 
@@ -8,7 +9,8 @@ function App() {
     <div className="container">
       {/* <Input /> */}
       {/* <InputStyled /> */}
-      <Product />
+      {/* <Product /> */}
+      <Balance />
     </div>
   );
 }
