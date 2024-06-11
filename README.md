@@ -45,7 +45,7 @@
 | -------- | ------------------------------------------------------- |
 | 1회차    | git 명령어 / Flex / input 이벤트 / react-icons          |
 | 2회차    | Styled-component / S-dot 네이밍 / 컴포넌트 분리 / props |
-| 3회차    | map / 삼항 연산자 / 공용 컴포넌트                       |
+| 3회차    | map / 연산자 / 공용 컴포넌트                       |
 | 4회차    | Route / 폴더 구조 / navigate                            |
 | 5회차    | axios / api 명세서 / JSON-Placeholder                   |
 | 6회차    | 피그마 보는 방법                                        |
@@ -58,5 +58,6 @@
 | -------- | ------------- | --------------------------------------------- | ------------------------------------------------------------------ |
 | 1회차    | 입력창 다루기 | useState, useEffect, input, flex, react-icons | [바로가기](https://www.notion.so/575980b5f8b44dd4bb620facab97bee3) |
 | 2회차    | Props | styled-component, S-dot naming, props | [바로가기](https://www.notion.so/2-Props-c8b50b99ef9c4fde90f574961d561b1c) |
+| 3회차    | map 활용 | map, 공용 컴포넌트, key | [바로가기](https://www.notion.so/3-map-5febaec8a7e749c08b7674b1ab3b716d) |
 
 <br/><br/>
