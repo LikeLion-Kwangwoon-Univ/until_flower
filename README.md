@@ -60,5 +60,6 @@
 | 2회차    | Props | styled-component, S-dot naming, props | [바로가기](https://www.notion.so/2-Props-c8b50b99ef9c4fde90f574961d561b1c) |
 | 3회차    | map 활용 | map, 공용 컴포넌트, key | [바로가기](https://www.notion.so/3-map-5febaec8a7e749c08b7674b1ab3b716d) |
 | 4회차    | Router | router, useNavigate | [바로가기](https://www.notion.so/4-Router-01375cf2aea9438c9c541cb261c2a6b5) |
+| 5회차    | 데이터 요청 | axios, useState, useEffect, JSON-Placeholder, map | [바로가기](https://www.notion.so/5-6e82e6996b54448fbc75e79ffd63200d) |
 
 <br/><br/>
