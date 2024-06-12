@@ -25,6 +25,7 @@ const Main = () => {
       <Button onClick={() => navigate('/input-styled')}>Input-Styled</Button>
       <Button onClick={() => navigate('/product')}>Product</Button>
       <Button onClick={() => navigate('/balance')}>Balance</Button>
+      <Button onClick={() => navigate('/profile')}>Profile</Button>
 
       <Button onClick={handleButtonClick}>데이터 요청</Button>
     </>

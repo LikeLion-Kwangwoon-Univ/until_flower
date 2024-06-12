@@ -5,6 +5,7 @@ import Product from './components/Product';
 import Input from './components/Input';
 import InputStyled from './components/InputStyled';
 import Main from './components/Main';
+import Profile from './components/Profile';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/input-styled" element={<InputStyled />} />
         <Route path="/product" element={<Product />} />
         <Route path="/balance" element={<Balance />} />
+        <Route path="/profile" element={<Profile />} />
       </Routes>
     </div>
   );
