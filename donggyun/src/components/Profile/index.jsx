@@ -1,4 +1,5 @@
 import axios from 'axios';
+import * as S from './style';
 import { useEffect, useState } from 'react';
 
 const Profile = () => {
@@ -18,11 +19,15 @@ const Profile = () => {
   }, []);
 
   return (
-    <>
+    <S.Container>
       {users.map((user) => (
-        <div key={user.id}>{user.id}</div>
+        <S.BoxProfile key={user.id}>
+          <p>name : {user.name}</p>
+          <p>company : {user.company.name}</p>
+          <p>phone : {user.phone}</p>
+        </S.BoxProfile>
       ))}
-    </>
+    </S.Container>
   );
 };
 
