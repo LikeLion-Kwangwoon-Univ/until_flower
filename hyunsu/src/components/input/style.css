@@ -1,0 +1,40 @@
+.input_pw {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.input_label_box {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.input_label {
+  font-weight: bold;
+}
+.pw_box {
+  border: 2px solid rgb(114, 114, 205);
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+}
+.pw_clock {
+  border-right: 1px solid grey;
+  padding-right: 5px;
+}
+.pw_box_content {
+  border: none;
+  outline: none;
+  margin-bottom: 5px;
+  flex-grow: 1;
+}
+.pw_box_error {
+  color: red;
+  font-size: 11px;
+  font-weight: 500;
+}
+.login_box {
+  background-color: blueviolet;
+  color: white;
+  border-radius: 4%;
+  padding: 10px 10px;
+}
