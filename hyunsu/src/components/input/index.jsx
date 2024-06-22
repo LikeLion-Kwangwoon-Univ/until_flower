@@ -6,7 +6,7 @@ import { useEffect, useState } from 'react';
 function Input() {
   const [pw, setPw] = useState('');
   const [isError, setIsError] = useState(true);
-  const handleChangePw = (event) => setPw(e.target.value);
+  const handleChangePw = (e) => setPw(e.target.value);
   const handleSubmit = (event) => {
     event.preventDefault(); //여기까지가 기본 순서
     console.log(pw); // onsubmit 이 폼이 제출됐을 때
