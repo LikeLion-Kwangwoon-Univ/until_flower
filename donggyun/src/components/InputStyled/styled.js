@@ -1,6 +1,7 @@
 import styled from 'styled-components';
-
+// export const 원하는 이름(Name) styled. (원하는 요소)`
 export const Container = styled.form`
+  //  const 원하는 이름 styled. (원하는 요소)
   display: flex;
   flex-direction: column;
   gap: 20px;
