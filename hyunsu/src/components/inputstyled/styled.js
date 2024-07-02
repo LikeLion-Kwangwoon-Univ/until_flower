@@ -16,7 +16,9 @@ export const InputLabel = styled.p`
 `;
 
 export const PwBox = styled.div`
-  border: 2px solid rgb(114, 114, 205);
+  border: 2px solid
+    ${({ $isError }) => ($isError ? 'red' : 'rgb(114, 114, 205)')};
+
   padding: 5px 10px;
   display: flex;
   align-items: center;

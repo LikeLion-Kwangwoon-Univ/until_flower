@@ -3,9 +3,10 @@ import { FaEyeSlash } from 'react-icons/fa';
 import './style.css';
 import { useEffect, useState } from 'react';
 
-function Input() {
+const Input = () => {
   const [pw, setPw] = useState('');
-  const [isError, setIsError] = useState(true);
+  const [borderColor, setBorderColor] = useState('red');
+  const [isError, setIsError] = useState(false);
   const handleChangePw = (e) => setPw(e.target.value);
   const handleSubmit = (event) => {
     event.preventDefault(); //여기까지가 기본 순서
@@ -13,8 +14,10 @@ function Input() {
   };
 
   useEffect(() => {
-    if (pw.length >= 8) setIsError(false);
-    else setIsError(true);
+    if (pw.length >= 8) setIsError(true);
+    else setIsError(false);
+    if (pw.length >= 8) setBorderColor(false);
+    else setBorderColor(true);
   }, [pw]);
 
   return (
@@ -22,6 +25,7 @@ function Input() {
       <div className="input_label_box">
         <p className="input_label">Password</p>
         <div className="pw_box">
+          {borderColor}
           <CiLock size={20} className="pw_clock" color="grey" />
           <input
             type="password"
@@ -32,14 +36,12 @@ function Input() {
           />
           <FaEyeSlash size={20} color="grey" />
         </div>
-        <p className="pw_box_error">{isError && '8글자 이상 입력해주세요.'}</p>
+        <p className="pw_box_error">{isError && 'Error Message'}</p>
       </div>
 
-      <button className="login_box" error={isError}>
-        로그인
-      </button>
+      <button className="login_box">로그인</button>
     </form>
   );
-}
+};
 
 export default Input;
